@@ -1,4 +1,4 @@
-var Input = prompt("enter words")
+var Input = prompt("Please enter your words, separated by ', ' to let the program alphabetize them.")
 var ConsHi = 12
 var ConsLo = 2
 
