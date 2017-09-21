@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <script>
+            function funcbutton(){
+                var Input = prompt("enter words")
+                var ConsHi = 12
+                var ConsLo = 2
+                
+                function GiveBack(array) {
+                  return array.split(", ").sort().length
+                }
+                var proof = GiveBack(Input)
+                
+                if (proof <= ConsHi && proof >= ConsLo) {
+                  function alphabetize(words) {
+                    return words.split(", ").sort().join(", ")
+                  }
+                  alert("These are your alphabetized words: " + alphabetize(Input))
+                } else {
+                  alert("Sorry, the amount of words you inserted did not fit the constraint of 2 to 12 words. Try again!")
+                }                
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1>
+            Hello, <br>
+            Welcome to this awesome website! <br>
+        </h1>
+        <p><br>
+            Why is it awesome? <br>
+            - Because it lets you alphabetize words! <br>
+            <br>
+            Really? <br>
+            YES! Try it out!
+        </p>
+
+        <button onclick="funcbutton();">
+            Alphabetize your words!
+        </button>
+    </body>
+</html>
